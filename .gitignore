@@ -1,0 +1,4 @@
+# System pseudo-files from container environment
+anon_inode:*
+pipe:*
+socket:*
