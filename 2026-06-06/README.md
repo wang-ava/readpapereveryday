@@ -1,31 +1,36 @@
 # 2026-06-06 AI 论文分享
 
-今天推荐 5 篇，重点放在 agent 系统、multi-agent 推理、安全对齐、科研协作与具身/VLM 安全。整体脉络很清楚：agent 不再只是 prompt workflow，而是在走向运行时、通信协议、上下文治理和安全边界这些更工程化的问题。
+今天整理 5 篇近期值得分享的 AI 论文，覆盖 multi-agent reasoning、长程 agent 上下文管理、多模态视频安全、具身智能模块化设计，以及 AI4Science 里的 autonomous discovery。排序优先考虑最近 7-14 天内的发布或版本更新、选题的重要性、技术新意和阅读价值。
 
 ## 推荐顺序
 
-1. [Streaming Communication in Multi-Agent Reasoning](./01-Streaming%20Communication%20in%20Multi-Agent%20Reasoning.md)
-   - Spotlight：StreamMA 把 multi-agent 推理从“等上游完整输出后再传递”改成“逐步流式传递”，同时降低延迟并提升准确率。最值得看的是它提出了 step-level scaling law，把 agent 系统的扩展维度从“agent 数量”拓展到“每个 agent 的推理步数与传递时机”。
+1. [01-StreamMA.md](./01-StreamMA.md)
+   - 论文：Streaming Communication in Multi-Agent Reasoning
+   - Spotlight：这篇最值得先看，因为它把 agent 系统里常被忽略的“通信时机”做成了核心变量，直接同时打到延迟、成本和错误传播三个痛点。
    - 链接：https://arxiv.org/abs/2606.05158
 
-2. [Learning Agent-Compatible Context Management for Long-Horizon Tasks](./02-Learning%20Agent-Compatible%20Context%20Management.md)
-   - Spotlight：AdaCoM 把上下文管理从固定摘要/截断策略变成一个外部可训练的 context manager，服务于冻结的 agent。它很适合关注 deep research、web search 和长任务 agent 的人。
+2. [02-AdaCoM.md](./02-AdaCoM.md)
+   - 论文：Learning Agent-Compatible Context Management for Long-Horizon Tasks
+   - Spotlight：AdaCoM 把上下文管理从手工工程经验升级成可训练、可迁移的 runtime 组件，非常适合关注 deep research 和长任务 agent 的读者。
    - 链接：https://arxiv.org/abs/2605.30785
 
-3. [A Policy-Driven Runtime Layer for Agentic LLM Serving](./03-A%20Policy-Driven%20Runtime%20Layer%20for%20Agentic%20LLM%20Serving.md)
-   - Spotlight：这篇从 serving stack 角度提出 agent runtime layer，试图把 prefix caching、batch shaping、fairness、tool memoization 和 safety enforcement 统一放到框架与推理引擎之间。它的价值在于把 agent 工程问题抽象成可插拔的运行时策略层。
-   - 链接：https://arxiv.org/abs/2605.27744
+3. [03-ConceptGuard.md](./03-ConceptGuard.md)
+   - 论文：ConceptGuard: Proactive Safety in Text-and-Image-to-Video Generation through Multimodal Risk Detection
+   - Spotlight：它把多模态视频生成的安全防线前移到生成前和生成早期，强调图文组合风险而不是只做文本过滤。
+   - 链接：https://openreview.net/forum?id=27W8fxyebT
 
-4. [AI Agents Enable Adaptive Computer Worms](./04-AI%20Agents%20Enable%20Adaptive%20Computer%20Worms.md)
-   - Spotlight：这是一篇必须谨慎阅读的安全论文。核心不是“又一个恶意软件 demo”，而是指出 open-weight LLM 加 agent 行为会改变攻击经济学，传统的中心化模型安全控制无法覆盖这种自持式威胁。
-   - 链接：https://arxiv.org/abs/2606.03811
+4. [04-MOSAIC.md](./04-MOSAIC.md)
+   - 论文：MOSAIC: The Right Modules for Each Task in Embodied Agents
+   - Spotlight：MOSAIC 不再追求“一个大模型包打天下”，而是按任务动态拼装模块，代表了具身智能更务实的系统路线。
+   - 链接：https://openreview.net/forum?id=pF9wISLUYo
 
-5. [Jailbreaking Vision-Language Models Through the Visual Modality](./05-Jailbreaking%20Vision-Language%20Models%20Through%20the%20Visual%20Modality.md)
-   - Spotlight：VLM 安全不能只继承文本 LLM 的 safety training。这篇 ICML 2026 论文把视觉通道作为一等攻击面来分析，说明跨模态安全对齐仍有明显缺口。
-   - 链接：https://arxiv.org/abs/2605.00583
+5. [05-CosmoEvolve.md](./05-CosmoEvolve.md)
+   - 论文：Beyond AI as Assistants: Toward Autonomous Discovery in Cosmology
+   - Spotlight：这篇短论文把 AI scientist 拆成“量化目标优化”和“开放式科研协作”两类系统问题，是今天最值得留作方向性思考的一篇。
+   - 链接：https://arxiv.org/abs/2605.14791
 
 ## 今日观察
 
-- Agent 系统研究正在从“能力展示”转向“运行时结构”：上下文如何删、步骤何时传、缓存如何做、策略在哪里执行。
-- Safety 研究也在系统化：从文本拒答扩大到视觉输入、工具调用、运行时权限和自主传播风险。
-- 对 Obsidian 后续阅读来说，可以把今天的笔记归成三个标签簇：`#AgentRuntime`、`#AgentSafety`、`#VLM安全`。
+- Agent 研究正在从 prompt/workflow 层，继续下沉到 runtime 层：通信协议、上下文治理、模块编排都开始成为一等问题。
+- 安全边界也在变化：从文本 LLM 的拒答，扩展到多模态生成中的组合风险与前置式 guardrail。
+- AI4Science 的重点正在从“模型辅助科研”转向“系统化的研究代理”，但评价标准和人机分工还远未稳定。
