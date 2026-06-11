@@ -1,30 +1,33 @@
 # 2026-06-11 AI 论文分享
 
-今天选取 5 篇近 7–14 天的 AI 论文（以 Asia/Shanghai 日期区间为准），覆盖 LLM、Agent、CV、Embodied、AI4S。
+## 当日推荐列表（共 5 篇）
 
-## 推荐顺序
+### 1. PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents
+- **Spotlight**：通过事件溯源让 AI 代码代理具备可继承记忆和行动前置防错，解决工程流程中最常见的“重复失误”问题。
+- **论文链接**：[https://arxiv.org/abs/2606.12329](https://arxiv.org/abs/2606.12329)
+- **PDF**：[https://arxiv.org/pdf/2606.12329.pdf](https://arxiv.org/pdf/2606.12329.pdf)
+- **笔记**：[01-ProjectMEM-AI-编码代理记忆与治理.md](/Users/avawang/Documents/Obsidian%20Vault/paper/readpapereveryday/2026-06-11/01-ProjectMEM-AI-编码代理记忆与治理.md)
 
-1. [01-DistIL.md](./01-DistIL.md)
-   - 论文：Reinforcement Learning from Rich Feedback with Distributional DAgger
-   - Spotlight：把单点 reward 扩展到 rich feedback，给 token 级决策提供可证明的信用分配路径。
-   - 链接：https://arxiv.org/abs/2606.05152
+### 2. A Five-Plane Reference Architecture for Runtime Governance of Production AI Agents
+- **Spotlight**：把 agent 治理从单点鉴权扩展为多平面运行时控制与权限衰减机制，贴近生产部署真实需求。
+- **论文链接**：[https://arxiv.org/abs/2606.12320](https://arxiv.org/abs/2606.12320)
+- **PDF**：[https://arxiv.org/pdf/2606.12320.pdf](https://arxiv.org/pdf/2606.12320.pdf)
+- **笔记**：[02-Five-Plane-Governance-Runtime.md](/Users/avawang/Documents/Obsidian%20Vault/paper/readpapereveryday/2026-06-11/02-Five-Plane-Governance-Runtime.md)
 
-2. [03-Semantic-Horizons.md](./03-Semantic-Horizons.md)
-   - 论文：Semantic Horizons: Information-Theoretic Limits of Foundation Model-Guided Embodied Planning
-   - Spotlight：用 PIB 给出长时 embodied 规划可计算的理论视界与 replanning 阈值。
-   - 链接：https://openreview.net/forum?id=CNej21yr6r
+### 3. StatefulDiscovery: Evidence-Calibrated Claim Formation in Open-Ended Scientific Discovery
+- **Spotlight**：用于 AI4S 的证据状态框架，目标是“先有证据状态再下 claim”，降低自动发现的过早过度推断。
+- **论文链接**：[https://arxiv.org/abs/2606.11851](https://arxiv.org/abs/2606.11851)
+- **PDF**：[https://arxiv.org/pdf/2606.11851.pdf](https://arxiv.org/pdf/2606.11851.pdf)
+- **笔记**：[04-StatefulDiscovery-证据状态化科学发现.md](/Users/avawang/Documents/Obsidian%20Vault/paper/readpapereveryday/2026-06-11/04-StatefulDiscovery-证据状态化科学发现.md)
 
-3. [04-Scene2Demo.md](./04-Scene2Demo.md)
-   - 论文：Scene2Demo: Self-Evolving Embodied Data Generation via Object-Action Graph
-   - Spotlight：通过反馈修正回路，将低人工成本的 embodied 任务数据生成做成可迭代自举。
-   - 链接：https://openreview.net/forum?id=88IawleLNi
+### 4. VASO: Formally Verifiable Self-Evolving Skills for Physical AI Agents
+- **Spotlight**：提出形式化技能合同 + 反例反馈闭环，针对具身代理提供可验证的技能演化路线。
+- **论文链接**：[https://arxiv.org/abs/2606.05395](https://arxiv.org/abs/2606.05395)
+- **PDF**：[https://arxiv.org/pdf/2606.05395.pdf](https://arxiv.org/pdf/2606.05395.pdf)
+- **笔记**：[03-VASO-形式化自进化技能.md](/Users/avawang/Documents/Obsidian%20Vault/paper/readpapereveryday/2026-06-11/03-VASO-形式化自进化技能.md)
 
-4. [02-GIM-World.md](./02-GIM-World.md)
-   - 论文：Geometry-Aware Implicit Memory for Video World Models
-   - Spotlight：在长时 video world model 中把几何约束纳入 memory，使几何一致性与视觉一致性协同提升。
-   - 链接：https://arxiv.org/abs/2606.02436
-
-5. [05-CARTOGRAPH.md](./05-CARTOGRAPH.md)
-   - 论文：When Should an AI Scientist Stop? Verifiable Experiment Steering and Refusal for Autonomous Discovery
-   - Spotlight：把 AI Scientist 从“不断试验”转向“可验证的停止/回撤”决策，提升 AI4S 安全性。
-   - 链接：https://openreview.net/forum?id=DdDTacsJnr
+### 5. Reroute, Don't Remove: Recoverable Visual Token Routing for Vision-Language Models
+- **Spotlight**：用可恢复路由替代直接移除，保留关键视觉 token，显著提升 grounding 稳定性并兼顾推理效率。
+- **论文链接**：[https://arxiv.org/abs/2606.12412](https://arxiv.org/abs/2606.12412)
+- **PDF**：[https://arxiv.org/pdf/2606.12412.pdf](https://arxiv.org/pdf/2606.12412.pdf)
+- **笔记**：[05-Reroute-可恢复视觉token路由.md](/Users/avawang/Documents/Obsidian%20Vault/paper/readpapereveryday/2026-06-11/05-Reroute-可恢复视觉token路由.md)
