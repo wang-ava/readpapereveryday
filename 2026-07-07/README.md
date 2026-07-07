@@ -1,31 +1,25 @@
-# 2026-07-07 AI 论文推荐
+# 2026-07-07 AI 论文分享
 
-本目录汇总当天检索的 5 篇近期 AI 论文（优先筛选 2026-07-01 到 2026-07-07（Asia/Shanghai）期间发布或更新的论文，覆盖 LLM/Agent/Embodied/AI4S 主题）。
+## 今日推荐列表（按优先级）
 
-排序依据：
-1. 方法新意
-2. 对生产/应用的可落地价值
-3. 评测可信度
-4. 主题覆盖均衡
+1. [ReContext：Recursive Evidence Replay](ReContext-Recursive-Evidence-Replay.md)  
+   Spotlight：训练外推理增强路线，解决长上下文下“看得见却没用上证据”的关键瓶颈，适合直接复用到问答与决策推理服务。  
 
-## 推荐列表（含 spotlight 与链接）
+2. [LLM Agents 在无人观看场景中的行为偏移](LLM-Agents-No-Watching.md)  
+   Spotlight：通过 public/OTR 双通道揭示智能体可能产生隐含目标偏移，提醒我们把安全评估从显式任务指标扩展到行为一致性。  
 
-1. [LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning](https://arxiv.org/abs/2607.02513v1)
-   - Spotlight：把 unlearning 安全从“输出看起来正常”升级为参数级可验证指标，直接影响隐私合规与审核流程。
-   - 文件：[`LACUNA.md`](LACUNA.md)
+3. [PointDiT：单目几何估计](PointDiT-Pixel-Space-Diffusion.md)  
+   Spotlight：以更简单的像素空间 diffusion 结构挑战“latent 必要论”，对 CV 系统工程化部署更友好。  
 
-2. [Distributed Attacks in Persistent-State AI Control](https://arxiv.org/abs/2607.02514v1)
-   - Spotlight：定义 AI coding agent 的持久态攻击威胁面，挑战传统单会话安全监控假设。
-   - 文件：[`AI-Control-Distributed-Attacks.md`](AI-Control-Distributed-Attacks.md)
+4. [Embodied.cpp：具身模型统一推理运行时](Embodiedcpp-Runtime.md)  
+   Spotlight：把 VLA/WAM 部署统一到跨硬件的 C++ runtime，直接提升闭环机器人系统的落地一致性和部署效率。  
 
-3. [MemSyco-Bench: Benchmarking Sycophancy in Agent Memory](https://arxiv.org/abs/2607.01071v2)
-   - Spotlight：提供可复现实验的记忆偏误基准，把“记得了”与“该不该记得”区分开来。
-   - 文件：[`MemSyco-Bench-Agent-Memory.md`](MemSyco-Bench-Agent-Memory.md)
+5. [AI4S - 植物表型双智能体框架](AI4S-Plant-Phenotyping-Agentic-Discovery.md)  
+   Spotlight：高通量表型工作流从“天/周”变成“秒级”交互，给 AI4S 提供可复用的科学发现流程模板。  
 
-4. [Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots](https://arxiv.org/abs/2607.02501v1)
-   - Spotlight：通过统一运行时抽象降低跨模型、跨硬件的具身 AI 部署门槛，强调闭环控制时序。
-   - 文件：[`Embodied.cpp-Embodied-Runtime.md`](Embodied.cpp-Embodied-Runtime.md)
+## 当日归档
 
-5. [Interpretation-Oriented Cloud Removal via Observation-Anchored Residual Flow with Geo-Contextual Alignment](https://arxiv.org/abs/2607.02471v1)
-   - Spotlight：把云去除任务从像素复原推进到下游解释任务可用性，契合 AI4S 的端到端应用标准。
-   - 文件：[`GACR-Remote-Sensing-Cloud-Removal.md`](GACR-Remote-Sensing-Cloud-Removal.md)
+- 文件夹路径：`2026-07-07`
+- 论文数量：5 篇
+- 主题覆盖：LLM / Agent / CV / 具身智能 / AI4S
+
