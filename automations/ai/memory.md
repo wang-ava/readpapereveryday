@@ -2,8 +2,8 @@
 
 - Automation ID: ai
 - Last run start: 2026-08-02T11:31:33+08:00
-- Last run end: 2026-08-02T11:42:00+08:00
-- Last run duration: 635 seconds
+- Last run end: 2026-08-02T12:46:52+08:00
+- Last run duration: 4519 seconds
 - Last run status: completed
 - Current date directory: 2026-08-02
 - Papers selected: 5
