@@ -4,7 +4,7 @@
 # Routing Is Least Learnable Where It Is Most Valuable: Bounds on Representation Routing for Web Agents
 
 - **论文标题：** Routing Is Least Learnable Where It Is Most Valuable: Bounds on Representation Routing for Web Agents
-- **作者/机构：** Jiaming Wei（University College London / Holistic AI）、Zekun Wu（Holistic AI / UCL）、Adriano Koshiyama（Holistic AI）、Maria Perez-Ortiz（UCL Centre for Artificial Intelligence）
+- **作者/机构：** Jiaming Wei、Zekun Wu、Adriano Koshiyama、Maria Perez-Ortiz（arXiv 页面未列出机构信息，待正文/作者主页确认）
 - **发布日期/版本：** 2026-08-06（v1）
 - **主题标签：** #Agent #WebAgent #Routing #Benchmark #成本优化 #评价方法
 - **论文链接：** [https://arxiv.org/abs/2608.06171](https://arxiv.org/abs/2608.06171)
