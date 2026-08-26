@@ -1,25 +1,25 @@
-# 2026-08-25 AI 论文分享
+# 2026-08-25 AI 论文分享（复跑更新）
 
-今日覆盖主题：LLM、Agent、CV、具身智能、AI4S。优先选择自 2026-08-18（距今约 7 天）发布的近期 arXiv 论文，并兼顾可复现性、任务新意与工程可落地性。
+今日覆盖主题：LLM、Agent、CV、具身智能、AI4S。基于近日报提交论文（arXiv）并补充项目/代码信息。
 
 ## 推荐顺序
 
-1. [01-entity-tone-medial-bias.md](01-entity-tone-medial-bias.md)
-   - Spotlight：把媒体偏见分析重构为实体-情绪-事件三层流程，在低资源语言下给出可复用的 bias 监测框架。
-   - 论文链接：[https://arxiv.org/abs/2608.17454v1](https://arxiv.org/abs/2608.17454v1)
+1. [06-prime-agent.md](06-prime-agent.md)
+   - Spotlight：把长时任务的“执行层稳定性”从系统设计中抽象出来，以递归子代理和持久 harness 显著提高代理工作流成功率。
+   - 论文链接：[https://arxiv.org/abs/2608.23552](https://arxiv.org/abs/2608.23552)
 
-2. [02-lego-rl.md](02-lego-rl.md)
-   - Spotlight：针对 coding agent 的训练-执行分歧给出 harness-native RL 框架，提升 SWE-bench Verified 的真实性能。
-   - 论文链接：[https://arxiv.org/abs/2608.17393v1](https://arxiv.org/abs/2608.17393v1)
+2. [07-proxyformer-llm-long-context.md](07-proxyformer-llm-long-context.md)
+   - Spotlight：用双流 proxy 解耦局部细节与全局交互，让超长上下文与高分辨率生成更容易在有限算力下落地。
+   - 论文链接：[https://arxiv.org/abs/2608.23463](https://arxiv.org/abs/2608.23463)
 
-3. [03-geoweaver.md](03-geoweaver.md)
-   - Spotlight：用几何先验与测试时适配修复长序列 3D 重建中的尺度漂移和姿态误差，不依赖单模型重训。
-   - 论文链接：[https://arxiv.org/abs/2608.17389v1](https://arxiv.org/abs/2608.17389v1)
+3. [08-fixanything-3d-rendering-refinement.md](08-fixanything-3d-rendering-refinement.md)
+   - Spotlight：把不同 3D 表达的修复问题统一为一个视频生成先验 pipeline，支持跨表示的一致优化。
+   - 论文链接：[https://arxiv.org/abs/2608.23549](https://arxiv.org/abs/2608.23549)
 
-4. [04-eatr-stereo.md](04-eatr-stereo.md)
-   - Spotlight：在 humanoid VLA 中引入 embodiment-aware token routing，实现主视图保留与 stereo 辅助按需注入。
-   - 论文链接：[https://arxiv.org/abs/2608.17453v3](https://arxiv.org/abs/2608.17453v3)
+4. [09-act-with-intent-vla.md](09-act-with-intent-vla.md)
+   - Spotlight：在 VLA 中显式蒸馏行为意图，长时任务成功率和目标一致性都获得明显提升。
+   - 论文链接：[https://arxiv.org/abs/2608.23478](https://arxiv.org/abs/2608.23478)
 
-5. [05-cast-medvlm.md](05-cast-medvlm.md)
-   - Spotlight：提出无标注的 CAST 解码机制，用反事实解剖区域干预降低 Med-VLM 幻觉，适合 AI4S 安全场景。
-   - 论文链接：[https://arxiv.org/abs/2608.17427v1](https://arxiv.org/abs/2608.17427v1)
+5. [10-traceable-spectral-inference-ariel.md](10-traceable-spectral-inference-ariel.md)
+   - Spotlight：通过 prediction-based influence 与误差代理，为真值缺失的空间科学任务提供可追溯可靠性评估。
+   - 论文链接：[https://arxiv.org/abs/2608.23458](https://arxiv.org/abs/2608.23458)
