@@ -4,7 +4,7 @@
 
 ## 基本信息
 - 论文标题：Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses
-- 作者：赵晨 Yu, Yingcheng Wu, Zhenfei Yin, Kaiyuan Chen, Zhe Zhao, Mengdi Wang, Shuicheng Yan, Ling Yang（机构未在 arXiv 页面完整披露）
+- 作者：Zhaochen Yu, Yingcheng Wu, Zhenfei Yin, Kaiyuan Chen, Zhe Zhao, Mengdi Wang, Shuicheng Yan, Ling Yang（机构未在 arXiv 页面完整披露）
 - 发布日期（版本）：2026-08-25（v1）
 - 主题标签：`#Agent` `#LongHorizon` `#Memory` `#ToolUse` `#RLA`
 - 论文链接：[https://arxiv.org/abs/2608.24876v1](https://arxiv.org/abs/2608.24876v1)
